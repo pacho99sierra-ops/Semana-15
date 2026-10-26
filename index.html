@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Página de muestra para practicar diseño web responsive con HTML y CSS."
+    />
+    <title>Explora el espacio | Aula Horizonte</title>
+    <link rel="stylesheet" href="estilos-base.css" />
+  </head>
+  <body>
+    <a class="salto-contenido" href="#contenido">Saltar al contenido</a>
+
+    <header class="encabezado">
+      <a class="marca" href="#" aria-label="Aula Horizonte, inicio">
+        <span class="marca-icono" aria-hidden="true">AH</span>
+        <span>Aula Horizonte</span>
+      </a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <a href="#cursos">Cursos</a>
+        <a href="#proyecto">Proyecto</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="portada" aria-labelledby="titulo-portada">
+        <div class="portada-texto">
+          <p class="etiqueta">APRENDE A TU RITMO</p>
+          <h1 id="titulo-portada">Ideas que te llevan más lejos</h1>
+          <p class="portada-descripcion">
+            Explora cursos cortos, crea proyectos y descubre nuevas formas de
+            aprender tecnología.
+          </p>
+          <a class="boton" href="#cursos">Explorar cursos</a>
+        </div>
+        <div
+          class="ilustracion"
+          role="img"
+          aria-label="Ilustración de un planeta y estrellas"
+        >
+          <span class="planeta" aria-hidden="true">✦</span>
+          <span class="estrella estrella-uno" aria-hidden="true">✧</span>
+          <span class="estrella estrella-dos" aria-hidden="true">✦</span>
+          <span class="etiqueta-planeta">UN UNIVERSO DE IDEAS</span>
+        </div>
+      </section>
+
+      <section
+        id="cursos"
+        class="seccion cursos"
+        aria-labelledby="titulo-cursos"
+      >
+        <div class="encabezado-seccion">
+          <div>
+            <p class="etiqueta">RUTAS PARA EXPLORAR</p>
+            <h2 id="titulo-cursos">Encuentra tu próximo curso</h2>
+          </div>
+          <p>
+            Aprende algo nuevo con actividades prácticas y proyectos propios.
+          </p>
+        </div>
+
+        <div class="rejilla-cursos">
+          <article class="tarjeta">
+            <div class="tarjeta-icono icono-coral" aria-hidden="true">✿</div>
+            <p class="categoria">DISEÑO</p>
+            <h3>Diseño con intención</h3>
+            <p>
+              Organiza ideas y conviértelas en experiencias visuales claras.
+            </p>
+            <a
+              href="#contacto"
+              aria-label="Más información sobre Diseño con intención"
+            >
+              Ver curso <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="tarjeta">
+            <div class="tarjeta-icono icono-azul" aria-hidden="true">
+              &lt;/&gt;
+            </div>
+            <p class="categoria">PROGRAMACIÓN</p>
+            <h3>Primeros pasos web</h3>
+            <p>Construye páginas con HTML y aprende a darles estilo con CSS.</p>
+            <a
+              href="#contacto"
+              aria-label="Más información sobre Primeros pasos web"
+            >
+              Ver curso <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="tarjeta">
+            <div class="tarjeta-icono icono-verde" aria-hidden="true">◎</div>
+            <p class="categoria">CREATIVIDAD</p>
+            <h3>Ideas en movimiento</h3>
+            <p>Practica cómo contar historias con imágenes, formas y color.</p>
+            <a
+              href="#contacto"
+              aria-label="Más información sobre Ideas en movimiento"
+            >
+              Ver curso <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        </div>
+
+        <div class="resumen-cursos">
+          <h3>Compara las rutas</h3>
+          <p>Revisa el área y el enfoque de cada curso antes de elegir.</p>
+          <div
+            class="tabla-contenedor"
+            role="region"
+            aria-label="Resumen de cursos, desplazable horizontalmente"
+            tabindex="0"
+          >
+            <table class="tabla-cursos">
+              <caption>
+                Resumen de los cursos disponibles en Aula Horizonte
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Curso</th>
+                  <th scope="col">Área</th>
+                  <th scope="col">Enfoque</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Diseño con intención</th>
+                  <td>Diseño</td>
+                  <td>Organizar ideas y crear experiencias visuales claras.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Primeros pasos web</th>
+                  <td>Programación</td>
+                  <td>Construir páginas con HTML y aplicar estilos con CSS.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ideas en movimiento</th>
+                  <td>Creatividad</td>
+                  <td>Contar historias con imágenes, formas y color.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyecto" class="proyecto" aria-labelledby="titulo-proyecto">
+        <div class="proyecto-sello" aria-hidden="true">✺</div>
+        <div>
+          <p class="etiqueta">APRENDER HACIENDO</p>
+          <h2 id="titulo-proyecto">Tu siguiente idea puede empezar hoy</h2>
+          <p>
+            Elige una ruta, experimenta con lo que aprendes y comparte tu
+            proyecto con la comunidad.
+          </p>
+        </div>
+        <a class="boton boton-claro" href="#contacto">Conoce el proyecto</a>
+      </section>
+    </main>
+
+    <footer id="contacto" class="pie">
+      <a class="marca marca-pie" href="#">
+        <span class="marca-icono" aria-hidden="true">AH</span>
+        <span>Aula Horizonte</span>
+      </a>
+      <p>Aprender también es explorar.</p>
+      <a href="mailto:hola@aulahorizonte.example">hola@aulahorizonte.example</a>
+    </footer>
+  </body>
+</html>

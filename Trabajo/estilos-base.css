@@ -1,0 +1,366 @@
+/* Punto de partida intencionalmente fijo: el reto es adaptarlo a distintas pantallas. */
+:root {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: #17243b;
+  background: #f7f8fc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+  background: #f7f8fc;
+}
+
+a {
+  color: inherit;
+}
+
+.salto-contenido {
+  position: absolute;
+  left: -10000px;
+}
+
+.salto-contenido:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 10;
+  padding: 0.75rem;
+  background: white;
+}
+
+.encabezado {
+  height: 88px;
+  padding: 0 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.marca {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.marca-icono {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 12px;
+  background: #6456d9;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.navegacion {
+  display: flex;
+  gap: 36px;
+}
+
+.navegacion a,
+.pie a {
+  text-decoration: none;
+}
+
+.portada {
+  min-height: 420px;
+  margin: 0 72px;
+  padding: 50px 70px;
+  display: grid;
+  grid-template-columns: 1fr 390px;
+  align-items: center;
+  gap: 50px;
+  border-radius: 24px;
+  background: #eeecff;
+}
+
+.portada-texto {
+  max-width: 510px;
+}
+
+.etiqueta,
+.categoria {
+  margin: 0 0 0.75rem;
+  color: #6456d9;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 490px;
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  line-height: 1.05;
+}
+
+.portada-descripcion {
+  max-width: 430px;
+  color: #5b6477;
+  line-height: 1.7;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.9rem 1.25rem;
+  border-radius: 10px;
+  background: #6456d9;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ilustracion {
+  position: relative;
+  width: 390px;
+  height: 280px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #28224f;
+  color: white;
+}
+
+.planeta {
+  width: 150px;
+  height: 150px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #ffbd8a, #ed6f96 58%, #865edb);
+  box-shadow: 0 0 55px rgb(237 111 150 / 35%);
+  font-size: 3rem;
+}
+
+.estrella {
+  position: absolute;
+  color: #ffcf8e;
+}
+
+.estrella-uno {
+  top: 45px;
+  left: 58px;
+  font-size: 2rem;
+}
+
+.estrella-dos {
+  right: 48px;
+  bottom: 72px;
+}
+
+.etiqueta-planeta {
+  position: absolute;
+  bottom: 18px;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+}
+
+.seccion {
+  margin: 88px 72px;
+}
+
+.encabezado-seccion {
+  margin-bottom: 28px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.encabezado-seccion h2,
+.proyecto h2 {
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.encabezado-seccion > p {
+  max-width: 350px;
+  margin-bottom: 0;
+  color: #687186;
+  line-height: 1.6;
+}
+
+.rejilla-cursos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.tarjeta {
+  min-height: 290px;
+  padding: 25px;
+  border: 1px solid #e7e8ef;
+  border-radius: 16px;
+  background: white;
+}
+
+.tarjeta-icono {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.icono-coral {
+  background: #fff0ec;
+  color: #df745e;
+}
+
+.icono-azul {
+  background: #e9f2ff;
+  color: #3674c9;
+}
+
+.icono-verde {
+  background: #e9f7ee;
+  color: #438e62;
+}
+
+.tarjeta h3 {
+  margin-bottom: 0.55rem;
+  font-size: 1.2rem;
+}
+
+.tarjeta > p:not(.categoria) {
+  min-height: 48px;
+  color: #687186;
+  line-height: 1.5;
+}
+
+.tarjeta > a {
+  color: #5143c7;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.resumen-cursos {
+  margin-top: 3rem;
+}
+
+.resumen-cursos h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.35rem;
+}
+
+.resumen-cursos > p {
+  color: #687186;
+  line-height: 1.6;
+}
+
+.tabla-cursos {
+  width: 100%;
+  min-width: 42rem;
+  border-collapse: collapse;
+  background: white;
+  text-align: left;
+}
+
+.tabla-cursos caption {
+  padding: 0 0 0.75rem;
+  color: #687186;
+  text-align: left;
+}
+
+.tabla-cursos th,
+.tabla-cursos td {
+  padding: 1rem;
+  border-bottom: 1px solid #e7e8ef;
+  vertical-align: top;
+}
+
+.tabla-cursos thead {
+  background: #242044;
+  color: white;
+}
+
+.tabla-cursos tbody th {
+  color: #39316f;
+}
+
+.proyecto {
+  min-height: 220px;
+  margin: 0 72px 80px;
+  padding: 36px 48px;
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  align-items: center;
+  gap: 26px;
+  border-radius: 20px;
+  background: #242044;
+  color: white;
+}
+
+.proyecto .etiqueta {
+  color: #c4bfff;
+}
+
+.proyecto h2 {
+  max-width: 550px;
+}
+
+.proyecto p:not(.etiqueta) {
+  max-width: 570px;
+  margin: 0.75rem 0 0;
+  color: #d0cfe0;
+  line-height: 1.6;
+}
+
+.proyecto-sello {
+  width: 76px;
+  height: 76px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #423b77;
+  color: #ffcf8e;
+  font-size: 2.8rem;
+}
+
+.boton-claro {
+  background: white;
+  color: #39316f;
+  white-space: nowrap;
+}
+
+.pie {
+  min-height: 100px;
+  padding: 24px 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e7e8ef;
+  color: #687186;
+}
+
+.marca-pie {
+  color: #17243b;
+}
+
+.pie p {
+  margin: 0;
+}
